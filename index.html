@@ -3,117 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jangam Bala Chandra Mohanreddy</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Jangam Bala Chandra Mohanreddy - Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #121212;
             color: #fff;
-            margin: 0;
-            padding: 0;
-        }
-        header {
             text-align: center;
             padding: 20px;
-            background-color: #1f1f1f;
         }
-        .animated-name {
-            font-size: 2.5em;
-            font-weight: bold;
-            color: #00ffaa;
-            animation: move 3s infinite alternate;
+        header h1 {
+            font-size: 2.5rem;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 4px solid #00ffcc;
+            width: 100%;
+            animation: typing 4s steps(40, end), blink 0.75s step-end infinite;
         }
-        @keyframes move {
-            from { transform: translateX(0); }
-            to { transform: translateX(20px); }
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
         }
-        .profile-pic {
-            display: block;
-            margin: 20px auto;
+        @keyframes blink {
+            from, to { border-color: transparent; }
+            50% { border-color: #00ffcc; }
+        }
+        .profile-pic img {
             border-radius: 50%;
             width: 150px;
             height: 150px;
-            border: 3px solid #00ffaa;
+            margin: 20px auto;
         }
         section {
-            padding: 20px;
+            margin-bottom: 40px;
         }
-        h2 { color: #00ffaa; }
-        a { color: #00ffaa; }
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
+        .projects img {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            border-radius: 8px;
         }
-        .skill {
-            background: #1f1f1f;
-            padding: 10px 20px;
-            border: 1px solid #00ffaa;
-            border-radius: 5px;
-        }
-        form {
-            background: #1f1f1f;
-            padding: 20px;
-            border-radius: 5px;
-        }
-        input, textarea, button {
-            width: 100%;
+        .contact-form input, .contact-form textarea {
+            width: 80%;
             padding: 10px;
             margin-bottom: 10px;
             border: none;
             border-radius: 5px;
         }
-        button {
-            background-color: #00ffaa;
-            color: #121212;
-            font-weight: bold;
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #00ffcc;
+            border: none;
+            border-radius: 5px;
             cursor: pointer;
+        }
+        .whatsapp-link img {
+            width: 50px;
+            height: 50px;
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="animated-name">Jangam Bala Chandra Mohanreddy</div>
+        <h1>Jangam Bala Chandra Mohanreddy</h1>
         <p>Data Scientist | Web Developer | AI Enthusiast | Data Analyst</p>
-        <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
     </header>
 
-    <section id="about">
+    <section class="profile-pic">
+        <img src="profile.jpg" alt="Profile Picture">
+    </section>
+
+    <section class="about-me">
         <h2>About Me</h2>
         <p>I am a Computer Science student at CT University, passionate about Data Science, AI, and Web Development. I love solving complex problems and building innovative solutions.</p>
     </section>
 
-    <section id="skills">
-        <h2>What I’ve Learned</h2>
-        <div class="skills">
-            <div class="skill">Data Science</div>
-            <div class="skill">Artificial Intelligence</div>
-            <div class="skill">Web Development</div>
-            <div class="skill">Machine Learning</div>
-            <div class="skill">Python</div>
-            <div class="skill">JavaScript</div>
+    <section class="projects">
+        <h2>Projects</h2>
+        <div>
+            <p>Instagram Data Analysis</p>
+            <img src="instagram_project.png" alt="Instagram Data Analysis">
+        </div>
+        <div>
+            <p>Sales Data Analysis</p>
+            <img src="sales_project.png" alt="Sales Data Analysis">
+        </div>
+        <div>
+            <p>Weather Dashboard</p>
+            <img src="weather_project.png" alt="Weather Dashboard">
+        </div>
+        <div>
+            <p>AI-Based Code Debugger</p>
+            <img src="code_debugger_project.png" alt="Code Debugger">
         </div>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Instagram Data Analysis</strong> - Analyzed user engagement and trends using Python and Pandas. <a href="#">GitHub Link</a></li>
-            <li><strong>Sales Data Analysis</strong> - Built a dashboard to visualize sales insights and trends. <a href="#">GitHub Link</a></li>
-            <li><strong>Weather Dashboard</strong> - A real-time weather app using HTML, CSS, JS, and API integration. <a href="#">GitHub Link</a></li>
-            <li><strong>AI-Based Code Debugger</strong> - Developed a tool to identify and fix code errors using AI. <a href="#">GitHub Link</a></li>
-        </ul>
-    </section>
-
-    <section id="contact">
+    <section class="contact-form">
         <h2>Contact Me</h2>
-        <form action="#" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required><br>
+            <input type="email" name="email" placeholder="Your Email" required><br>
+            <textarea name="message" rows="4" placeholder="Your Message" required></textarea><br>
             <button type="submit">Send Message</button>
         </form>
+    </section>
+
+    <section class="whatsapp-link">
+        <h2>Chat with me on WhatsApp</h2>
+        <a href="https://wa.me/918978493009" target="_blank">
+            <img src="whatsapp_logo.png" alt="WhatsApp">
+        </a>
     </section>
 
     <footer>
