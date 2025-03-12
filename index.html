@@ -3,116 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #0d0d0d;
-            color: #fff;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-        }
-        header {
-            background: #1a1a1a;
-            padding: 20px 0;
-            text-align: center;
-        }
-        header h1 {
-            color: #00ffcc;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-        nav ul li a {
-            color: #00ffcc;
-            text-decoration: none;
-        }
-        .section {
-            padding: 50px 0;
-        }
-        h2 {
-            border-bottom: 2px solid #00ffcc;
-            display: inline-block;
-        }
-        ul {
-            padding: 0;
-        }
-        ul li {
-            margin-bottom: 10px;
-        }
-        a {
-            color: #00ffcc;
-        }
-        footer {
-            text-align: center;
-            padding: 20px 0;
-            background: #1a1a1a;
-        }
-    </style>
+    <title>Bala Chandra Mohanreddy's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Jangam Bala Chandra Mohanreddy</h1>
-            <p>Data Scientist | Web Developer | AI Enthusiast | Data Analyst</p>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#github">GitHub</a></li>
-                </ul>
-            </nav>
-        </div>
+        <div class="logo">Bala's Portfolio</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="about" class="section">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I am a Computer Science student at CT University, passionate about Data Science, AI, and Web Development. I love solving complex problems and building innovative solutions.</p>
+    <section id="home">
+        <div class="home-content">
+            <h1>Hello, I'm <span>Bala Chandra Mohanreddy</span></h1>
+            <p>Aspiring Data Analyst and Web Developer</p>
+            <img src="profile.png" alt="Profile Image" class="profile-img">
         </div>
     </section>
 
-    <section id="projects" class="section">
-        <div class="container">
-            <h2>Projects</h2>
-            <ul>
-                <li><strong>Instagram Data Analysis</strong> - Analyzed user engagement and trends using Python and Pandas. <a href="https://github.com/JANGAMBALACHANDRAMOHANREDDY/Instagram-Data-Analysis">GitHub Link</a></li>
-                <li><strong>Sales Data Analysis</strong> - Built a dashboard to visualize sales insights and trends. <a href="https://github.com/JANGAMBALACHANDRAMOHANREDDY/Sales-Data-Analysis">GitHub Link</a></li>
-                <li><strong>Weather Dashboard</strong> - A real-time weather app using HTML, CSS, JS, and API integration. <a href="https://github.com/JANGAMBALACHANDRAMOHANREDDY/Weather-Dashboard">GitHub Link</a></li>
-                <li><strong>AI-Based Code Debugger</strong> - Developed a tool to identify and fix code errors using AI. <a href="https://github.com/JANGAMBALACHANDRAMOHANREDDY/AI-Code-Debugger">GitHub Link</a></li>
-            </ul>
-        </div>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a passionate developer skilled in Data Science, AI, and Web Development.</p>
     </section>
 
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:balactuniversity@gmail.com">balactuniversity@gmail.com</a></p>
-            <p>Phone: +91 8978493009</p>
-        </div>
+    <section id="portfolio">
+        <h2>My Projects</h2>
+        <ul>
+            <li>Weather Dashboard</li>
+            <li>AI-Based Resume Analyzer</li>
+            <li>SkillHive Freelancing App</li>
+        </ul>
     </section>
 
-    <section id="github" class="section">
-        <div class="container">
-            <h2>GitHub</h2>
-            <p>Explore more of my projects on GitHub: <a href="https://github.com/JANGAMBALACHANDRAMOHANREDDY">My GitHub Profile</a></p>
-        </div>
+    <section id="experience">
+        <h2>Experience</h2>
+        <p>Working on AI projects, web apps, and data analysis tools.</p>
     </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Jangam Bala Chandra Mohanreddy. All Rights Reserved.</p>
-        </div>
-    </footer>
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <form id="contact-form">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" placeholder="Write your message here" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <a href="https://wa.me/918978493009" class="whatsapp-btn" target="_blank">
+        <img src="whatsapp.png" alt="WhatsApp"> Connect
+    </a>
+
+    <div class="qr-code">
+        <img src="qr-code.png" alt="QR Code">
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
