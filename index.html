@@ -3,120 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jangam Bala Chandra Mohanreddy - Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #121212;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
-        header h1 {
-            font-size: 2.5rem;
-            overflow: hidden;
-            white-space: nowrap;
-            border-right: 4px solid #00ffcc;
-            width: 100%;
-            animation: typing 4s steps(40, end), blink 0.75s step-end infinite;
-        }
-        @keyframes typing {
-            from { width: 0; }
-            to { width: 100%; }
-        }
-        @keyframes blink {
-            from, to { border-color: transparent; }
-            50% { border-color: #00ffcc; }
-        }
-        .profile-pic img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            margin: 20px auto;
-        }
-        section {
-            margin-bottom: 40px;
-        }
-        .projects img {
-            width: 100px;
-            height: 100px;
-            margin: 10px;
-            border-radius: 8px;
-        }
-        .contact-form input, .contact-form textarea {
-            width: 80%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: none;
-            border-radius: 5px;
-        }
-        .contact-form button {
-            padding: 10px 20px;
-            background-color: #00ffcc;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .whatsapp-link img {
-            width: 50px;
-            height: 50px;
-        }
-    </style>
+    <title>Jangam Bala Chandra Mohanreddy</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Jangam Bala Chandra Mohanreddy</h1>
+        <div class="profile">
+            <img src="IMG_20241030_154700_353 (1).jpg" alt="Jangam Bala Chandra Mohanreddy">
+            <h1 id="animated-text">Jangam Bala Chandra Mohanreddy</h1>
+        </div>
         <p>Data Scientist | Web Developer | AI Enthusiast | Data Analyst</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <a href="https://github.com/JANGAMBALACHANDRAMOHANREDDY" target="_blank">GitHub</a>
+        </nav>
     </header>
 
-    <section class="profile-pic">
-        <img src="profile.jpg" alt="Profile Picture">
-    </section>
-
-    <section class="about-me">
+    <section id="about">
         <h2>About Me</h2>
-        <p>I am a Computer Science student at CT University, passionate about Data Science, AI, and Web Development. I love solving complex problems and building innovative solutions.</p>
+        <p>I am a Computer Science student at CT University, passionate about Data Science, AI, and Web Development.</p>
     </section>
 
-    <section class="projects">
+    <section id="projects">
         <h2>Projects</h2>
-        <div>
-            <p>Instagram Data Analysis</p>
+        <div class="project">
             <img src="instagram_project.png" alt="Instagram Data Analysis">
+            <h3>Instagram Data Analysis</h3>
+            <p>Analyzed user engagement and trends using Python and Pandas.</p>
+            <a href="https://github.com/JANGAMBALACHANDRAMOHANREDDY/Instagram-Data-Analysis" target="_blank">GitHub Link</a>
         </div>
-        <div>
-            <p>Sales Data Analysis</p>
-            <img src="sales_project.png" alt="Sales Data Analysis">
+        <div class="project">
+            <img src="sales_dashboard.png" alt="Sales Data Analysis">
+            <h3>Sales Data Analysis</h3>
+            <p>Built a dashboard to visualize sales insights and trends.</p>
+            <a href="https://github.com/JANGAMBALACHANDRAMOHANREDDY/Sales-Data-Analysis" target="_blank">GitHub Link</a>
         </div>
-        <div>
-            <p>Weather Dashboard</p>
-            <img src="weather_project.png" alt="Weather Dashboard">
-        </div>
-        <div>
-            <p>AI-Based Code Debugger</p>
-            <img src="code_debugger_project.png" alt="Code Debugger">
+        <div class="project">
+            <img src="weather_dashboard.png" alt="Weather Dashboard">
+            <h3>Weather Dashboard</h3>
+            <p>A real-time weather app using HTML, CSS, JS, and API integration.</p>
+            <a href="https://github.com/JANGAMBALACHANDRAMOHANREDDY/Weather-Dashboard" target="_blank">GitHub Link</a>
         </div>
     </section>
 
-    <section class="contact-form">
-        <h2>Contact Me</h2>
-        <form action="#" method="post">
-            <input type="text" name="name" placeholder="Your Name" required><br>
-            <input type="email" name="email" placeholder="Your Email" required><br>
-            <textarea name="message" rows="4" placeholder="Your Message" required></textarea><br>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:balactuniversity@gmail.com">balactuniversity@gmail.com</a></p>
+        <p>Phone: +91 8978493009</p>
+
+        <div class="whatsapp">
+            <a href="https://wa.me/918978493009" target="_blank">
+                <img src="whatsapp_logo.png" alt="WhatsApp">
+            </a>
+        </div>
+
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
             <button type="submit">Send Message</button>
         </form>
     </section>
 
-    <section class="whatsapp-link">
-        <h2>Chat with me on WhatsApp</h2>
-        <a href="https://wa.me/918978493009" target="_blank">
-            <img src="whatsapp_logo.png" alt="WhatsApp">
-        </a>
-    </section>
-
     <footer>
-        <p>&copy; 2025 Jangam Bala Chandra Mohanreddy. All Rights Reserved.</p>
+        <p>© 2025 Jangam Bala Chandra Mohanreddy. All Rights Reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
