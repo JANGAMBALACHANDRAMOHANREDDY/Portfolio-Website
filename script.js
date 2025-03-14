@@ -1,39 +1,76 @@
-// Smooth scrolling for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
+// Animated Name
+const animatedName = document.querySelector('.animated-name');
+let nameText = animatedName.textContent;
+animatedName.textContent = '';
+
+for (let char of nameText) {
+    let span = document.createElement('span');
+    span.textContent = char;
+    animatedName.appendChild(span);
+}
+
+let delay = 0;
+document.querySelectorAll('.animated-name span').forEach((span) => {
+    span.style.opacity = 0;
+    span.style.animation = `fadeIn 1s ease ${delay}s forwards`;
+    delay += 0.1;
+});
+
+// Contact Form Submission
+const form = document.getElementById('contact-form');
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    alert('Thank you for reaching out! I will get back to you soon.');
+    form.reset();
+});
+
+// Smooth Scroll
+const links = document.querySelectorAll('a[href^="#"]');
+
+for (let link of links) {
+    link.addEventListener('click', (e) => {
         e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
+        const targetId = link.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+        window.scrollTo({
+            top: targetSection.offsetTop - 50,
             behavior: 'smooth'
         });
     });
+}
+
+// WhatsApp Button
+const whatsappBtn = document.querySelector('.whatsapp-btn');
+whatsappBtn.addEventListener('click', () => {
+    window.open('https://wa.me/918978493009', '_blank');
 });
 
-// Fade-in effect when sections come into view
-const sections = document.querySelectorAll('section');
+// Projects Animation
+const projects = document.querySelectorAll('.project');
 
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = 1;
-            entry.target.style.transform = 'translateY(0)';
+window.addEventListener('scroll', () => {
+    projects.forEach((project) => {
+        const projectTop = project.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        if (projectTop < windowHeight - 50) {
+            project.style.opacity = 1;
+            project.style.transform = 'translateY(0)';
         }
     });
-}, {
-    threshold: 0.2
 });
 
-sections.forEach(section => {
-    section.style.opacity = 0;
-    section.style.transform = 'translateY(50px)';
-    observer.observe(section);
+// Initial Project Styling
+projects.forEach((project) => {
+    project.style.opacity = 0;
+    project.style.transform = 'translateY(50px)';
+    project.style.transition = 'all 0.5s ease-in-out';
 });
 
-// Contact form submission (dummy function)
-const contactForm = document.querySelector('#contact-form');
-if (contactForm) {
-    contactForm.addEventListener('submit', function (e) {
-        e.preventDefault();
-        alert('Thank you for reaching out! I will get back to you soon.');
-        contactForm.reset();
-    });
-}
+// Fade-in Animation
+const style = document.createElement('style');
+style.textContent = `
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}`;
+document.head.appendChild(style);
