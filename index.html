@@ -7,53 +7,92 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Jangam Bala Chandra Mohanreddy</h1>
-        <p>Tech Entrepreneur | AI/ML Developer | Founder of SkillHive</p>
-    </header>
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <section id="about">
+    <!-- Header Section -->
+    <section id="home" class="home">
+        <div class="container">
+            <h1 class="animated-name">Jangam Bala Chandra Mohanreddy</h1>
+            <p>Tech Entrepreneur | AI/ML Developer | Founder of SkillHive</p>
+            <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
         <div class="container">
             <h2>About Me</h2>
-            <p>I am an aspiring Data Analyst and AI/ML enthusiast pursuing B.Tech in Computer Science at CT University. I am the founder of SkillHive, a freelancing platform, and have developed various AI-powered projects and business solutions.</p>
+            <p>I am Jangam Bala Chandra Mohanreddy, a passionate tech entrepreneur and AI/ML enthusiast currently pursuing B.Tech in Computer Science and Engineering at CT University. With a deep interest in Artificial Intelligence, Data Science, and Web Development, I have worked on multiple innovative projects, integrating cutting-edge technologies to solve real-world problems.</p>
+            <p>I am the founder of SkillHive, a freelancing platform that connects talented individuals with global opportunities, leveraging AI algorithms to match skills and projects efficiently. My goal is to create impactful AI solutions that empower businesses and individuals.</p>
+            <p>My expertise lies in building AI models, developing web applications, and performing data analysis. I am proficient in Python, Machine Learning, AI frameworks, and modern web technologies. I actively collaborate on GitHub and constantly work on enhancing my skills by engaging in challenging projects.</p>
         </div>
     </section>
 
-    <section id="projects">
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
         <div class="container">
-            <h2>Projects</h2>
-            <ul>
-                <li><strong>SkillHive Freelancing App:</strong> A platform connecting freelancers with global opportunities.</li>
-                <li><strong>JB Clothing Showroom:</strong> Integrating technology with fashion business.</li>
-                <li><strong>AI-Powered Business Intelligence Dashboard:</strong> For data-driven business decisions.</li>
-                <li><strong>Automated Messaging System:</strong> Enhancing customer engagement through AI.</li>
-            </ul>
+            <h2>My Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <img src="instagram-analysis.png" alt="Instagram Data Analysis">
+                    <h3>Instagram Data Analysis</h3>
+                    <p>A data analysis project visualizing user engagement through likes, comments, and growth trends using AI-powered insights.</p>
+                </div>
+                <div class="project">
+                    <img src="text-to-image.png" alt="Text-to-Image Generator">
+                    <h3>Text-to-Image Generator</h3>
+                    <p>An AI project that converts text prompts into stunning images using deep learning algorithms.</p>
+                </div>
+                <div class="project">
+                    <img src="weather-dashboard.png" alt="Weather Dashboard">
+                    <h3>Weather Dashboard</h3>
+                    <p>A web-based weather app that fetches real-time data, showing temperature, humidity, and weather conditions through a user-friendly interface.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="services">
+    <!-- Skills and Tools -->
+    <section id="experience" class="experience">
         <div class="container">
-            <h2>Services</h2>
-            <ul>
-                <li>Freelancing Solutions</li>
-                <li>AI-Powered Business Tools</li>
-                <li>Web Development</li>
-                <li>Data Analytics Consulting</li>
-            </ul>
+            <h2>Core Skills & Tools</h2>
+            <div class="skills">
+                <img src="python-logo.png" alt="Python">
+                <img src="ml-logo.png" alt="Machine Learning">
+                <img src="ai-logo.png" alt="AI">
+                <img src="data-analysis.png" alt="Data Analysis">
+                <img src="git-logo.png" alt="Git">
+            </div>
         </div>
     </section>
 
-    <section id="contact">
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
         <div class="container">
             <h2>Contact Me</h2>
-            <p>Email: <a href="mailto:balactuniversity@gmail.com">balactuniversity@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/jangam-bala-chandra-mohanreddy">My LinkedIn</a></p>
-            <p>GitHub: <a href="https://github.com/JANGAMBALACHANDRAMOHANREDDY">My GitHub</a></p>
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <a href="https://wa.me/918978493009" class="whatsapp-btn" target="_blank">Chat on WhatsApp</a>
         </div>
     </section>
 
     <footer>
         <p>&copy; 2025 Jangam Bala Chandra Mohanreddy. All Rights Reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
