@@ -1,90 +1,210 @@
-/* General styling */
+/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-/* Header */
-header {
-    background: linear-gradient(135deg, #6e45e2, #88d3ce);
-    color: white;
-    padding: 60px 20px;
-    text-align: center;
-    animation: fadeIn 2s ease-in-out;
-}
-
-header h1 {
+h1, h2, h3, p {
     margin: 0;
-    font-size: 3rem;
-}
-
-header p {
-    font-size: 1.2rem;
-    margin-top: 10px;
-}
-
-/* Sections */
-section {
-    padding: 60px 20px;
-    text-align: center;
-    animation: slideIn 1.5s ease-in-out;
+    padding: 0;
 }
 
 .container {
-    max-width: 1200px;
+    width: 85%;
     margin: auto;
+    padding: 20px 0;
+}
+
+/* Sidebar Navigation */
+.sidebar {
+    background-color: #fff;
     padding: 20px;
-    background: white;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
-    font-size: 2.5rem;
-    color: #6e45e2;
-    margin-bottom: 20px;
-}
-
-ul {
+.sidebar ul {
     list-style: none;
     padding: 0;
 }
 
-li {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
+.sidebar ul li {
+    margin-bottom: 20px;
 }
 
-a {
-    color: #6e45e2;
+.sidebar ul li a {
     text-decoration: none;
+    color: #333;
+    font-size: 18px;
     font-weight: bold;
 }
 
-a:hover {
-    text-decoration: underline;
+.sidebar ul li a:hover {
+    color: #0073e6;
+}
+
+/* Home Section */
+.home {
+    margin-left: 270px;
+    padding: 50px 0;
+    text-align: center;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: block;
+}
+
+.animated-name {
+    font-size: 2.5em;
+    animation: slideIn 2s ease-in-out;
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* About Section */
+.about {
+    margin-left: 270px;
+    padding: 50px 20px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about h2 {
+    font-size: 2em;
+    color: #0073e6;
+    margin-bottom: 20px;
+}
+
+.about p {
+    line-height: 1.8;
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Portfolio Section */
+.portfolio {
+    margin-left: 270px;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 20px);
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.project h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.project p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Skills Section */
+.experience {
+    margin-left: 270px;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.skills img {
+    width: 80px;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.skills img:hover {
+    transform: scale(1.1);
+}
+
+/* Contact Section */
+.contact {
+    margin-left: 270px;
+    padding: 50px 20px;
+    background: #0073e6;
+    color: #fff;
+}
+
+.contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#contact-form button {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #0073e6;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #f4f4f4;
 }
 
 /* Footer */
 footer {
-    background: #333;
-    color: white;
-    text-align: center;
+    margin-left: 270px;
     padding: 20px;
-    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
 }
 
-/* Animations */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+/* WhatsApp Button */
+.whatsapp-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #25d366;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
-@keyframes slideIn {
-    from { transform: translateY(30px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
+.whatsapp-btn:hover {
+    background-color: #1da851;
 }
