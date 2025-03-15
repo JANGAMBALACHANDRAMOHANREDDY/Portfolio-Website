@@ -6,146 +6,154 @@
     <title>Jangam Bala Chandra Mohanreddy - Business Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .sidebar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 250px;
-            background-color: #333;
-            padding-top: 20px;
-            z-index: 1000;
-        }
-        .sidebar ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .sidebar ul li {
-            padding: 20px;
-            text-align: center;
-        }
-        .sidebar ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.2em;
-            display: block;
-        }
-        .sidebar ul li a:hover {
-            background-color: #575757;
-        }
-        .container {
-            margin-left: 270px;
-            padding: 30px;
-        }
-        section {
-            padding: 50px 20px;
-            background-color: white;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2 {
-            text-align: center;
-            font-size: 2.5em;
-        }
-        p {
-            font-size: 1.2em;
-            line-height: 1.8;
-        }
-        .animated-name {
-            font-size: 3em;
-            font-weight: bold;
-            animation: move 5s infinite alternate;
-        }
-        @keyframes move {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(30px); }
-        }
-        .projects, .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
-        .project, .skills img {
-            width: 300px;
-            background-color: #eee;
-            padding: 15px;
-            border-radius: 5px;
-            text-align: center;
-        }
-        .project img {
-            width: 100%;
-            border-radius: 5px;
-        }
-        .skills img {
-            height: 100px;
-        }
-        form input, form textarea, form button {
-            display: block;
-            width: 100%;
-            margin-bottom: 15px;
-            padding: 15px;
-            font-size: 1.1em;
-        }
-        form button {
-            background-color: #333;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        .whatsapp-btn {
-            display: block;
-            text-align: center;
-            padding: 15px;
-            background-color: #25D366;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.2em;
-        }
-        footer {
-            text-align: center;
-            padding: 15px;
-            background-color: #333;
-            color: white;
-            font-size: 1.1em;
-        }
-        .profile-pic {
-            display: block;
-            margin: 20px auto;
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            border: 3px solid #333;
-        }
-        @media (max-width: 768px) {
-            .sidebar {
-                position: static;
-                width: 100%;
-                height: auto;
-                text-align: center;
-            }
-            .container {
-                margin-left: 0;
-            }
-            .projects, .skills {
-                flex-direction: column;
-                align-items: center;
-            }
-            h1, h2 {
-                font-size: 2em;
-            }
-            .animated-name {
-                font-size: 2.2em;
-            }
-        }
+       body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #333;
+    padding-top: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    background-color: #575757;
+}
+
+.container {
+    margin-left: 220px;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.home, .about, .portfolio, .experience, .contact {
+    padding: 50px 20px;
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+h1, h2 {
+    text-align: center;
+    word-break: break-word;
+}
+
+.animated-name {
+    font-size: 2.5em;
+    animation: move 5s infinite alternate;
+}
+
+@keyframes move {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(30px); }
+}
+
+.projects, .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project, .skills img {
+    width: 100%;
+    max-width: 300px;
+    background-color: #eee;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.skills img {
+    height: 100px;
+}
+
+form input, form textarea, form button {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.whatsapp-btn {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .container {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .animated-name {
+        font-size: 2em;
+    }
+
+    .project, .skills img {
+        max-width: 100%;
+    }
+
+    h1, h2, p {
+        text-align: center;
+    }
+}
+
     </style>
 </head>
 <body>
