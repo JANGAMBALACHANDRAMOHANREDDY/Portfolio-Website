@@ -1,4 +1,4 @@
-   <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,40 +17,50 @@
             top: 0;
             left: 0;
             height: 100%;
-            width: 200px;
+            width: 250px;
             background-color: #333;
             padding-top: 20px;
+            z-index: 1000;
         }
         .sidebar ul {
             list-style-type: none;
             padding: 0;
         }
         .sidebar ul li {
-            padding: 15px;
+            padding: 20px;
             text-align: center;
         }
         .sidebar ul li a {
             color: white;
             text-decoration: none;
+            font-size: 1.2em;
             display: block;
         }
         .sidebar ul li a:hover {
             background-color: #575757;
         }
         .container {
-            margin-left: 220px;
-            padding: 20px;
+            margin-left: 270px;
+            padding: 30px;
         }
-        .home, .about, .portfolio, .experience, .contact {
+        section {
             padding: 50px 20px;
             background-color: white;
             margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         h1, h2 {
             text-align: center;
+            font-size: 2.5em;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.8;
         }
         .animated-name {
             font-size: 3em;
+            font-weight: bold;
             animation: move 5s infinite alternate;
         }
         @keyframes move {
@@ -75,36 +85,66 @@
             border-radius: 5px;
         }
         .skills img {
-            height: 150px;
+            height: 100px;
         }
         form input, form textarea, form button {
             display: block;
             width: 100%;
-            margin-bottom: 10px;
-            padding: 10px;
+            margin-bottom: 15px;
+            padding: 15px;
+            font-size: 1.1em;
+        }
+        form button {
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
         }
         .whatsapp-btn {
             display: block;
             text-align: center;
-            padding: 10px;
+            padding: 15px;
             background-color: #25D366;
             color: white;
             text-decoration: none;
             border-radius: 5px;
+            font-size: 1.2em;
         }
         footer {
             text-align: center;
-            padding: 10px;
+            padding: 15px;
             background-color: #333;
             color: white;
+            font-size: 1.1em;
         }
         .profile-pic {
             display: block;
             margin: 20px auto;
-            width: 150px;
-            height: 150px;
+            width: 180px;
+            height: 180px;
             border-radius: 50%;
             border: 3px solid #333;
+        }
+        @media (max-width: 768px) {
+            .sidebar {
+                position: static;
+                width: 100%;
+                height: auto;
+                text-align: center;
+            }
+            .container {
+                margin-left: 0;
+            }
+            .projects, .skills {
+                flex-direction: column;
+                align-items: center;
+            }
+            h1, h2 {
+                font-size: 2em;
+            }
+            .animated-name {
+                font-size: 2.2em;
+            }
         }
     </style>
 </head>
@@ -130,7 +170,8 @@
     <section id="about" class="about">
         <div class="container">
             <h2>About Me</h2>
-            <p>I am Jangam Bala Chandra Mohanreddy, a passionate tech entrepreneur and AI/ML enthusiast currently pursuing B.Tech in Computer Science and Engineering at CT University. With a deep interest in Artificial Intelligence, Data Science, and Web Development, I have worked on multiple innovative projects, integrating cutting-edge technologies to solve real-world problems.</p>
+            <p>I am Jangam Bala Chandra Mohanreddy, a passionate tech entrepreneur and AI/ML enthusiast currently pursuing B.Tech in Computer Science and Engineering at CT University. I specialize in Artificial Intelligence, Data Science, and Web Development.</p>
+            <p>Founder of SkillHive, a freelancing platform connecting talent with global opportunities through AI. Proficient in Python, AI frameworks, and modern web technologies.</p>
         </div>
     </section>
 
@@ -139,15 +180,15 @@
             <h2>My Projects</h2>
             <div class="projects">
                 <div class="project">
-                    <img src="project1.png" alt="Instagram Data Analysis">
+                    <img src="Screenshot 2025-03-14 142015.png" alt="Instagram Data Analysis">
                     <p>Instagram Data Analysis</p>
                 </div>
                 <div class="project">
-                    <img src="project2.png" alt="Text-to-Image Generator">
+                    <img src="Screenshot%202025-03-14%20143611.png" alt="Text-to-Image Generator">
                     <p>Text-to-Image Generator</p>
                 </div>
                 <div class="project">
-                    <img src="project3.png" alt="Weather Dashboard">
+                    <img src="Screenshot 2025-03-14 142342.png" alt="Weather Dashboard">
                     <p>Weather Dashboard</p>
                 </div>
             </div>
@@ -158,12 +199,12 @@
         <div class="container">
             <h2>Core Skills & Tools</h2>
             <div class="skills">
-                <img src="python.png" alt="Python">
-                <img src="ml.png" alt="Machine Learning">
-                <img src="ai.png" alt="AI">
-                <img src="data_analysis.png" alt="Data Analysis">
-                <img src="git.png" alt="Git">
-                <img src="web_dev.png" alt="Web Development">
+                <img src="Screenshot 2025-03-14 134924.png" alt="Python">
+                <img src="Screenshot 2025-03-14 135013.png" alt="Machine Learning">
+                <img src="Screenshot 2025-03-14 135123.png" alt="AI">
+                <img src="Screenshot 2025-03-14 135233.png" alt="Data Analysis">
+                <img src="Screenshot 2025-03-14 135305.png" alt="Git">
+                <img src="Screenshot 2025-03-14 135409.png" alt="Web Development">
             </div>
         </div>
     </section>
