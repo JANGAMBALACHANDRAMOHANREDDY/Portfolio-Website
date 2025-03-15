@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+   <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -50,7 +50,7 @@
             text-align: center;
         }
         .animated-name {
-            font-size: 2.5em;
+            font-size: 3em;
             animation: move 5s infinite alternate;
         }
         @keyframes move {
@@ -59,9 +59,9 @@
         }
         .projects, .skills {
             display: flex;
-            flex-direction: column;
+            flex-wrap: wrap;
             gap: 20px;
-            align-items: center;
+            justify-content: center;
         }
         .project, .skills img {
             width: 300px;
@@ -75,7 +75,7 @@
             border-radius: 5px;
         }
         .skills img {
-            height: 100px;
+            height: 150px;
         }
         form input, form textarea, form button {
             display: block;
@@ -131,8 +131,6 @@
         <div class="container">
             <h2>About Me</h2>
             <p>I am Jangam Bala Chandra Mohanreddy, a passionate tech entrepreneur and AI/ML enthusiast currently pursuing B.Tech in Computer Science and Engineering at CT University. With a deep interest in Artificial Intelligence, Data Science, and Web Development, I have worked on multiple innovative projects, integrating cutting-edge technologies to solve real-world problems.</p>
-            <p>I am the founder of SkillHive, a freelancing platform that connects talented individuals with global opportunities, leveraging AI algorithms to match skills and projects efficiently. My goal is to create impactful AI solutions that empower businesses and individuals.</p>
-            <p>My expertise lies in building AI models, developing web applications, and performing data analysis. I am proficient in Python, Machine Learning, AI frameworks, and modern web technologies. I actively collaborate on GitHub and constantly work on enhancing my skills by engaging in challenging projects.</p>
         </div>
     </section>
 
@@ -141,15 +139,15 @@
             <h2>My Projects</h2>
             <div class="projects">
                 <div class="project">
-                    <img src="instagram_data_analysis.png" alt="Instagram Data Analysis">
+                    <img src="project1.png" alt="Instagram Data Analysis">
                     <p>Instagram Data Analysis</p>
                 </div>
                 <div class="project">
-                    <img src="text_to_image_generator.png" alt="Text-to-Image Generator">
+                    <img src="project2.png" alt="Text-to-Image Generator">
                     <p>Text-to-Image Generator</p>
                 </div>
                 <div class="project">
-                    <img src="weather_dashboard.png" alt="Weather Dashboard">
+                    <img src="project3.png" alt="Weather Dashboard">
                     <p>Weather Dashboard</p>
                 </div>
             </div>
@@ -161,12 +159,27 @@
             <h2>Core Skills & Tools</h2>
             <div class="skills">
                 <img src="python.png" alt="Python">
-                <img src="machine_learning.png" alt="Machine Learning">
+                <img src="ml.png" alt="Machine Learning">
                 <img src="ai.png" alt="AI">
                 <img src="data_analysis.png" alt="Data Analysis">
                 <img src="git.png" alt="Git">
-                <img src="web_development.png" alt="Web Development">
+                <img src="web_dev.png" alt="Web Development">
             </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:balactuniversity@gmail.com">balactuniversity@gmail.com</a></p>
+            <p>Phone: <a href="tel:+918978493009">+91 8978493009</a></p>
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <a href="https://wa.me/918978493009" class="whatsapp-btn" target="_blank">Chat on WhatsApp</a>
         </div>
     </section>
 
