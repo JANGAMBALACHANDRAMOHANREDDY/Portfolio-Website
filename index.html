@@ -1,108 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bujii | Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
-  <style>
-    body { background-color: #0f172a; color: #e0f2fe; font-family: 'Segoe UI', sans-serif; }
-    .glow-text { text-shadow: 0 0 15px #38bdf8; }
-    .typewriter {
-      overflow: hidden;
-      border-right: 0.15em solid #38bdf8;
-      white-space: nowrap;
-      animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
-    }
-    @keyframes typing { from { width: 0; } to { width: 100%; } }
-    @keyframes blink-caret { from, to { border-color: transparent; } 50% { border-color: #38bdf8; } }
-    html { scroll-behavior: smooth; }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bujii | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #0f172a;
+            color: #e0f2fe;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .glow-text {
+            text-shadow: 0 0 15px #38bdf8;
+        }
+
+        .typewriter {
+            overflow: hidden;
+            border-right: 0.15em solid #38bdf8;
+            white-space: nowrap;
+            animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes blink-caret {
+
+            from,
+            to {
+                border-color: transparent;
+            }
+
+            50% {
+                border-color: #38bdf8;
+            }
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 
 <body class="p-6">
 
-  <!-- Navigation -->
-  <nav class="fixed w-full top-0 left-0 bg-[#0f172a] shadow-md z-50 py-4 flex justify-center space-x-6 text-cyan-300 text-lg font-semibold">
-    <a href="#home" class="hover:text-white">Home</a>
-    <a href="#about" class="hover:text-white">About</a>
-    <a href="#experience" class="hover:text-white">Experience</a>
-    <a href="#skills" class="hover:text-white">Skills</a>
-    <a href="#projects" class="hover:text-white">Projects</a>
-    <a href="#contact" class="hover:text-white">Contact</a>
-  </nav>
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 left-0 bg-[#0f172a] shadow-md z-50 py-4 flex justify-center space-x-6 text-cyan-300 text-lg font-semibold">
+        <a href="#home" class="hover:text-white">Home</a>
+        <a href="#about" class="hover:text-white">About</a>
+        <a href="#experience" class="hover:text-white">Experience</a>
+        <a href="#skills" class="hover:text-white">Skills</a>
+        <a href="#projects" class="hover:text-white">Projects</a>
+        <a href="#contact" class="hover:text-white">Contact</a>
+    </nav>
 
-  <!-- Hero Section -->
-  <section id="home" class="text-center mt-32 mb-20">
-    <img src="Screenshot 2025-07-03 201153.png" alt="Bujii Profile"
-         class="mx-auto rounded-full w-52 h-52 object-cover border-4 border-cyan-400 shadow-xl">
-    <h1 class="text-6xl font-extrabold glow-text mt-6">Hi, I'm <span class="text-cyan-300">Jangam Balachandramohanreddy</span></h1>
-    <p class="text-2xl mt-4 typewriter">AI & Data Science Engineer | Developer | Analyst</p>
-  </section>
+    <!-- Hero Section -->
+    <section id="home" class="text-center mt-32 mb-20">
+        <img src="Screenshot 2025-07-03 201153.png" alt="Bujii Profile" class="mx-auto rounded-full w-52 h-52 object-cover border-4 border-cyan-400 shadow-xl">
+        <h1 class="text-6xl font-extrabold glow-text mt-6">Hi, I'm <span class="text-cyan-300">Jangam Balachandramohanreddy</span></h1>
+        <p class="text-2xl mt-4 typewriter">AI & Data Science Engineer | Developer | Analyst</p>
+    </section>
 
-  <!-- About Section -->
-  <section id="about" class="mb-20 text-center max-w-3xl mx-auto">
-    <h2 class="text-5xl font-extrabold text-cyan-400 mb-6">🚀 About Me</h2>
-    <p class="text-lg leading-relaxed">
-      I’m a Computer Science undergrad focused on AI, Data Science, and Full‑Stack Development. With 200+ LeetCode problems solved, real-world project experience, and multiple certifications, I’m passionate about using technology to solve real problems.
-    </p>
-  </section>
+    <!-- About Section -->
+    <section id="about" class="mb-20 text-center max-w-3xl mx-auto">
+        <h2 class="text-5xl font-extrabold text-cyan-400 mb-6">🚀 About Me</h2>
+        <p class="text-lg leading-relaxed">
+            I’m a Computer Science undergrad focused on AI, Data Science, and Full‑Stack Development. With 200+ LeetCode problems solved, real-world project experience, and multiple certifications, I’m passionate about using technology to solve real problems.
+        </p>
+    </section>
 
-  <!-- Experience Section -->
-  <section id="experience" class="mb-20 text-center">
-    <h2 class="text-5xl font-extrabold text-cyan-400 mb-6">💼 Experience</h2>
-    <p class="text-xl font-semibold">Data Analyst Intern – YoungMinds Technology Solutions</p>
-    <p class="italic">June – August 2025</p>
-    <ul class="list-disc list-inside mt-3 max-w-xl mx-auto text-left text-lg">
-      <li>Designed dashboards using Tableau and Excel</li>
-      <li>Automated reporting with Python scripts</li>
-    </ul>
-  </section>
+    <!-- Experience Section -->
+    <section id="experience" class="mb-20 text-center">
+        <h2 class="text-5xl font-extrabold text-cyan-400 mb-6">💼 Experience</h2>
+        <p class="text-xl font-semibold">Data Analyst Intern – YoungMinds Technology Solutions</p>
+        <p class="italic">June – August 2025</p>
+        <ul class="list-disc list-inside mt-3 max-w-xl mx-auto text-left text-lg">
+            <li>Designed dashboards using Tableau and Excel</li>
+            <li>Automated reporting with Python scripts</li>
+        </ul>
+    </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="mb-20">
-    <h2 class="text-5xl font-extrabold text-cyan-400 mb-6 text-center">🛠 Skills</h2>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-lg font-semibold max-w-4xl mx-auto text-center">
-      <div>Python</div><div>Java</div><div>C++</div><div>JavaScript</div>
-      <div>MySQL</div><div>Tableau</div><div>Power BI</div><div>Machine Learning</div>
-      <div>Git & GitHub</div><div>HTML/CSS</div><div>Soft Computing</div><div>Data Analysis</div>
-    </div>
-  </section>
+    <!-- Skills Section -->
+    <section id="skills" class="mb-20">
+        <h2 class="text-5xl font-extrabold text-cyan-400 mb-6 text-center">🛠 Skills</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-lg font-semibold max-w-4xl mx-auto text-center">
+            <div>Python</div>
+            <div>Java</div>
+            <div>C++</div>
+            <div>JavaScript</div>
+            <div>MySQL</div>
+            <div>Tableau</div>
+            <div>Power BI</div>
+            <div>Machine Learning</div>
+            <div>Git & GitHub</div>
+            <div>HTML/CSS</div>
+            <div>Soft Computing</div>
+            <div>Data Analysis</div>
+        </div>
+    </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="mb-20">
-    <h2 class="text-5xl font-extrabold text-cyan-400 mb-6 text-center">📂 Projects</h2>
-    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-      <div class="bg-[#1e293b] p-4 rounded-lg shadow-md">
-        <h3 class="text-xl font-bold mb-2">🎟 Movie Ticket Booking System</h3>
-        <p>Java-based ticketing app with login, seat selection, and payment features.</p>
-        <a href="https://github.com/JANGAMBALACHANDRAMOHANREDDY/MovieTicketBookingSystem.git" class="text-blue-300 underline">GitHub</a>
-      </div>
-      <div class="bg-[#1e293b] p-4 rounded-lg shadow-md">
-        <h3 class="text-xl font-bold mb-2">🧠 AI Resume Analyzer</h3>
-        <p>Python/NLP app that scores resumes based on keywords and relevance.</p>
-        <a href="https://github.com/JANGAMBALACHANDRAMOHANREDDY/AI-RESUME-ANALYZER.git" class="text-blue-300 underline">GitHub</a>
-      </div>
-      <div class="bg-[#1e293b] p-4 rounded-lg shadow-md">
-        <h3 class="text-xl font-bold mb-2">📊 Superstore Dashboard</h3>
-        <p>Sales performance dashboard built using Tableau with real-time filters.</p>
-      </div>
-    </div>
-  </section>
+    <!-- Projects Section -->
+    <section id="projects" class="mb-20">
+        <h2 class="text-5xl font-extrabold text-cyan-400 mb-6 text-center">📂 Projects</h2>
+        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+            <div class="bg-[#1e293b] p-4 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-2">🎟 Movie Ticket Booking System</h3>
+                <p>Java-based ticketing app with login, seat selection, and payment features.</p>
+                <a href="https://github.com/JANGAMBALACHANDRAMOHANREDDY/MovieTicketBookingSystem.git" class="text-blue-300 underline">GitHub</a>
+            </div>
+            <div class="bg-[#1e293b] p-4 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-2">🧠 AI Resume Analyzer</h3>
+                <p>Python/NLP app that scores resumes based on keywords and relevance.</p>
+                <a href="https://github.com/JANGAMBALACHANDRAMOHANREDDY/AI-RESUME-ANALYZER.git" class="text-blue-300 underline">GitHub</a>
+            </div>
+            <div class="bg-[#1e293b] p-4 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-2">📊 Superstore Dashboard</h3>
+                <p>Sales performance dashboard built using Tableau with real-time filters.</p>
+                <a href="https://github.com/JANGAMBALACHANDRAMOHANREDDY/superstore data anlysis.git" class="text-blue-300 underline">GitHub</a>
+            </div>
+        </div>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="mb-20 text-center">
-    <h2 class="text-5xl font-extrabold text-cyan-400 mb-6">📞 Contact</h2>
-    <p class="text-lg">Email: <a href="mailto:balactuniversity@gmail.com" class="text-blue-300 underline">balactuniversity@gmail.com</a></p>
-    <p class="text-lg">Phone: +91 8978493009</p>
-    <p class="text-lg">GitHub: <a href="https://github.com/JANGAMBALACHANDRAMOHANREDDY" class="text-blue-300 underline">JANGAMBALACHANDRAMOHANREDDY</a></p>
-    <p class="text-lg">LinkedIn: <a href="https://linkedin.com/in/jangam-balachandramohanreddy" class="text-blue-300 underline">Profile</a></p>
-  </section>
+    <!-- Contact Section -->
+    <section id="contact" class="mb-20 text-center">
+        <h2 class="text-5xl font-extrabold text-cyan-400 mb-6">📞 Contact</h2>
+        <p class="text-lg">Email: <a href="mailto:balactuniversity@gmail.com" class="text-blue-300 underline">balactuniversity@gmail.com</a></p>
+        <p class="text-lg">Phone: +91 8978493009</p>
+        <p class="text-lg">GitHub: <a href="https://github.com/JANGAMBALACHANDRAMOHANREDDY" class="text-blue-300 underline">JANGAMBALACHANDRAMOHANREDDY</a></p>
+        <p class="text-lg">LinkedIn: <a href="https://linkedin.com/in/jangam-balachandramohanreddy" class="text-blue-300 underline">Profile</a></p>
+    </section>
 
-  <!-- Footer -->
-  <footer class="text-center text-cyan-200 text-sm pt-6 pb-8">
-    © 2025 Jangam Balachandramohanreddy | All rights reserved.
-  </footer>
+    <!-- Footer -->
+    <footer class="text-center text-cyan-200 text-sm pt-6 pb-8">
+        © 2025 Jangam Balachandramohanreddy | All rights reserved.
+    </footer>
 
 </body>
+
 </html>
